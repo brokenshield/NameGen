@@ -4,7 +4,7 @@ All arguments have a default value and are optional.
 
 Usage:
 foo = NameGen(in_file='names.txt', is_whole=True, is_joiner=False, join_chance=0.5, is_sorted=False, out_file='namegen_output.txt')
-foo = generate()
+foo.generate()
 
 Arguments:
 - in_file=names.txt                  Default input source file of names. Format should comma seperated names. The module will strip whitespace from the names.
