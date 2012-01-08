@@ -1,15 +1,21 @@
 NameGen: Random Name Generator:
-This class (NameGen) will allow you to generate random names for use in writing and RPGs. The module is requires a source file of comma-seperated names (default="names.txt").
+This class (NameGen) will allow you to generate random names for use in writing and RPGs. 
+The module is requires a source file of comma-seperated names (default="names.txt").
 All arguments have a default value and are optional.
 
 Usage:
-foo = NameGen(in_file='names.txt', is_whole=True, is_joiner=False, join_chance=0.5, is_sorted=False, out_file='namegen_output.txt')
+foo = NameGen(in_file='names.txt', is_whole=True, is_joiner=False, join_chance=0.5, 
+is_sorted=False, out_file='namegen_output.txt')
 foo.generate()
 
 Arguments:
-- in_file=names.txt                  Default input source file of names. Format should comma seperated names. The module will strip whitespace from the names.
-- is_whole=True                       Should bs_name_gen use whole names (True) or recombine (False). Defaults to using whole names
-- is_joiner=False                      Should bs_name_gen use random joining names ('von', 'di', 'ap', 'sa')? Suggested future feature: Make these culture relevent.
-- join_chance=0.5                       The percentage chance of each name using a joiner when joiners=True. Defaults to 50% (0.5)
-- is_sorted=False                       Should the list of name be alphabetically sorted?
-- out_file=namegen_output.txt    Filename to output names to. Defaults to bs_name_gen_output.txt and will output one name per line.
+- in_file=names.txt: Default input source file of names. Format should comma seperated names. 
+The module will strip whitespace from the names.
+- is_whole=True: Should bs_name_gen use whole names (True) or recombine (False). Defaults to 
+using whole names
+- is_joiner=False: Should bs_name_gen use random joining names ('von', 'di', 'ap', 'sa')? 
+Suggested future feature: Make these culture relevent.
+- join_chance=0.5: The percentage chance of each name using a joiner when joiners=True. 
+Defaults to 50% (0.5)
+- is_sorted=False: Should the list of name be alphabetically sorted?
+- out_file=namegen_output.txt    Filename to output names to. Will output one name per line.
